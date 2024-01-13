@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Keillor Behrmann] - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development. [Keillor(Kj)]'s course assignment portal with other relevant keywords.">
+    <meta name="author" content="[Keillor Behrmann]">
+</head>
+
+<body>
+
+    <header>
+        <img src="profile_image.jpg" alt="Profile Image">
+        <span>[Keillor Behrmann]</span>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>WDD 230: Web Frontend Development</h1>
+
+        <section class="card">
+            <h2>Learning Activities</h2>
+            <ul>
+     
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Information</h2>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> [Keillor Behrmann] [Arizona USA]</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = "Last Modified: " + document.lastModified;
+    </script>
+
+</body>
+
+</html>
