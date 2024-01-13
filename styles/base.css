@@ -1,1 +1,41 @@
+/* base.css */
+
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; 
+    background-color: #222;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 15px;
+}
 
