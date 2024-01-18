@@ -1,0 +1,5 @@
+/* CSS for Dark Mode */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
