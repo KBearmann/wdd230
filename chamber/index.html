@@ -79,7 +79,14 @@
     </footer>
 
     <!-- dynamic modification date) -->
-    <script src="path/to/your-script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var lastModified = new Date(document.lastModified);
+            var options = { year: 'numeric', month: 'long', day: 'numeric' };
+            var formattedDate = lastModified.toLocaleDateString('en-US', options);
+            document.getElementById("lastModified").innerText = formattedDate;
+        });
+    </script>
 
 </body>
 
