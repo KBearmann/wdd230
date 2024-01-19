@@ -14,3 +14,8 @@ body.dark-mode {
     background-color: #1a1a1a; 
     color: #ffffff; 
 }
+@media (max-width: 600px) {
+    body {
+        background-color: lightgray;
+    }
+}
