@@ -1,7 +1,12 @@
 
 body {
-    background-color: #ffffff;
+    background-color: lightgray;
     color: #333333; 
+}
+@media (max-width: 600px) {
+    body {
+        background-color: lightgray;
+    }
 }
 
 /* Dark Mode */
