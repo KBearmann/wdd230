@@ -2,115 +2,44 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce</title>
-    <meta name="description" content="Chamber of Commerce.">
-    <!-- Include this script in the head section of your HTML document -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-        // last modification date 
-            var lastModified = new Date(document.lastModified);
-            var options = { year: 'numeric', month: 'long', day: 'numeric' };
-            var formattedDate = lastModified.toLocaleDateString('en-US', options);
-            document.getElementById("lastModified").innerText = formattedDate;
-        });
-    </script>
-
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="path/to/favicon.png">
-
-    <!-- Social Media Meta Settings -->
-    <meta property="og:title" content="Chamber of Commerce">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="path/to/social-image.jpg">
-    <meta property="og:url" content="https://chamber.com">
-
-    
     <link rel="stylesheet" href="chamber/scripts/base.css">
+
+    <!-- Hamburger -->
+    <script>
+        function toggleNav() {
+            var navLinks = document.getElementById("nav-links");
+            navLinks.style.display = navLinks.style.display === "flex" ? "none" : "flex";
+        }
+    </script>
 </head>
 
 <body>
 
-    <!-- Header -->
+    
     <header>
         
     </header>
+
     
     <nav>
-      
+        <div class="hamburger" onclick="toggleNav()">☰</div>
+        <ul id="nav-links">
+            
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            
+        </ul>
     </nav>
 
-    <!-- Main Content -->
     <main>
-        <!-- Hero Image -->
-        <section class="hero">
-            /* Hero Image Styles */
-        .hero {
-            background-image: url('path/to/your-hero-image.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 400px; 
-            color: #fff;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        </section>
-
-        <!-- Call to Action -->
-        <section class="cta">
         
-        </section>
-
-        <!-- Current Events -->
-        <section class="events">
-            
-        </section>
-
-        <!-- Weather Card -->
-        <section class="weather">
-            
-        </section>
-
-        <!-- Company Spotlights -->
-        <section class="spotlights">
-            
-        </section>
     </main>
 
-    
-
     <footer>
-    <!-- Contact Information -->
-        <div class="contact-info">
-            <h4>Contact Us</h4>
-            <p>Email: info@yourchamber.com</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Address: 123 Main RD, ChamberCity</p>
-    </div>
-
-    <!-- Additional Development Information -->
-        <div class="development-info">
-            <p>Developed by: Keillor Behrmann</p>
-            <p>Course: WDD 230 Project</p>
-            <p>Last Modification: <span id="lastModified"></span></p>
-        </div>
+        
     </footer>
 
-    <!-- dynamic modification date) -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var lastModified = new Date(document.lastModified);
-            var options = { year: 'numeric', month: 'long', day: 'numeric' };
-            var formattedDate = lastModified.toLocaleDateString('en-US', options);
-            document.getElementById("lastModified").innerText = formattedDate;
-        });
-    </script>
-
+    <script src="chamber/scripts/script.js"></script>
 </body>
 
 </html>
-
