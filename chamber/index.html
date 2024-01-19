@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber of Commerce</title>
     <meta name="description" content="Chamber of Commerce.">
+    <!-- Include this script in the head section of your HTML document -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        // last modification date 
+            var lastModified = new Date(document.lastModified);
+            var options = { year: 'numeric', month: 'long', day: 'numeric' };
+            var formattedDate = lastModified.toLocaleDateString('en-US', options);
+            document.getElementById("lastModified").innerText = formattedDate;
+        });
+    </script>
+
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="path/to/favicon.png">
