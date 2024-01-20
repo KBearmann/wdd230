@@ -20,9 +20,9 @@ nav {
     padding: 10px;
     display: flex;
     align-items: center;
-    }    
+}
 
-    /* Hamburger Menu */
+/* Hamburger Menu */
 .hamburger {
     display: none;
     justify-content: space-between;
@@ -30,18 +30,21 @@ nav {
     font-size: 24px;
     cursor: pointer;
 }
-    
-    /* Mobile View */
+
+/* Mobile View */
 @media only screen and (max-width: 768px) {
+    nav {
         flex-direction: column;
         align-items: flex-start;
-        ul {
-            display: none;
-        }
-        .hamburger {
-            display: flex;
-        }
     }
+    nav ul {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
