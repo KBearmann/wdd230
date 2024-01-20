@@ -23,18 +23,18 @@ nav {
     }    
 
     /* Hamburger Menu */
-    .hamburger {
-        display: none;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 24px;
-        cursor: pointer;
-    }
+.hamburger {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
     
     /* Mobile View */
-    @media only screen and (max-width: 768px) {
-        flex-direction: column;
-        align-items: flex-start;
+@media only screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
         ul {
             display: none;
         }
