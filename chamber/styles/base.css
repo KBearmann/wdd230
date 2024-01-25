@@ -1,4 +1,3 @@
-
 @import url('styles/reset.css');
 
 body {
@@ -22,7 +21,7 @@ nav {
     align-items: center;
 }
 
-/* Hamburger Menu */
+/* Hamburger */
 .hamburger {
     display: none;
     justify-content: space-between;
@@ -67,16 +66,25 @@ nav li {
     flex-direction: column;
     justify-content: center;
 }
-main {
+
+
+.current-event,
+.weather,
+.company-spotlight {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.main {
     padding: 20px;
 }
 
 footer {
-    
+
 }
 
 @media only screen and (max-width: 768px) {
-    main {
+    .main {
         padding: 10px;
     }
 }
