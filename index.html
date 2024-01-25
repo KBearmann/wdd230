@@ -7,16 +7,33 @@
     <title>[Keillor Behrmann] - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="WDD 230 - Web Frontend Development. Keillor Behrmann's course assignment portal with other relevant keywords.">
     <meta name="author" content="Keillor Joseph Behrmann (KJ)">
-        <!-- CSS normalization from week 2 -->
+    <!-- CSS normalization from week 2 -->
     <link rel="stylesheet" href="styles/reset-normal.css">
     <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
-
-    <meta property="og:title" content="Keillors Home Page">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.arizonahighways.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Farticle_hero_image_1474x475%2Fpublic%2F2022-10%2F1122_Drive_ParkLink.jpg%3Fh%3D18f453e1%26itok%3DKZphvkaJ&tbnid=t-ya2CaAkSOblM&vet=12ahUKEwiw9MPZqOiDAxX6OEQIHbwGDLcQMygAegQIARBO..i&imgrefurl=https%3A%2F%2Fwww.arizonahighways.com%2Fpark-link-drive&docid=6pBe4o3UObMBFM&w=1240&h=475&q=%20link%20arizona&ved=2ahUKEwiw9MPZqOiDAxX6OEQIHbwGDLcQMygAegQIARBO"> <!--Arizona -->
-    <meta property="og:url" content="https://kbearmann.github.io/wdd230/"> <!-- not sure what to put here -->
     <link rel="stylesheet" href="styles/fonts.css">
-    <link rel="stylessheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        /* Additional styles for the hero image and overlay */
+        picture {
+            position: relative;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,36 +44,39 @@
         <!-- dark mode button from week 2 -->
         <button id="darkModeToggle">Toggle Dark Mode</button>
     </header>
-<nav>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="week01/chamber-site-plan.html">Chamber Plan</a></li>
-        <li><a href="#">Site Plan</a></li>
-        <li><a href="#">Form</a></li>
-    </ul>
-    <!--Hamburger menu -->
-    <button id="hamburger">&#8801;</button>
-</nav>
-
-
-
-
     
-    <main>
-        <h1>WDD 230: Web Frontend Development</h1>
+    <nav>
+        <!-- Hamburger menu -->
+        <button id="hamburger">&#8801;</button>
+    </nav>
 
+    <main>
+        <!-- Hero Image -->
+        <picture>
+            <source media="(max-width: 400px)" srcset="path/to/mobile-view.webp">
+            <source media="(min-width: 401px) and (max-width: 960px)" srcset="path/to/larger-view.webp">
+            <img src="fallback-image.jpg" alt="Latter-day Temple">
+            <div class="overlay">Temple Name</div>
+        </picture>
+
+        <!-- Learning Activities Card -->
         <section class="card">
             <h2>Learning Activities</h2>
             <ul>
-                
+                <!-- Add your learning activities here -->
             </ul>
         </section>
 
+        <!-- Information Card -->
         <section class="card">
             <h2>Information</h2>
-        
+            <!-- Page Visit Counter -->
+            <p>Page Visits: <span id="visitCounter">0</span></p>
         </section>
     </main>
+
+    <!-- Google Map with Lazy Loading -->
+    <iframe src="your-google-map-embed-link" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
     <footer>
         <p>&copy; <span id="currentYear"></span> Keillor Behrmann [Arizona, USA]</p>
@@ -65,6 +85,7 @@
 
     <script src="getDates.js"></script>
     <script src="DarkMode.js"></script>
+    <script src="visitCounter.js"></script>
 
 </body>
 
