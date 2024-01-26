@@ -32,11 +32,7 @@ header {
     justify-content: center;
     align-items: center;
     margin: 20px;
-header img {
-    width: 200px;
-    height: auto;
 }
-
 body {
     background-color: lightgray;
     color: #333333; 
