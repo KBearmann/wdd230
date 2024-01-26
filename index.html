@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <script src="visitCounter.js"></script>
 </head>
+
 <body>
     <header>
         <img src="mobilkeillor.webp" alt="Photo of Keillor Behrmann" style="max-width: 50%; height: auto; margin: 0 auto;">
@@ -20,7 +22,7 @@
         <!-- dark mode button from week 2 -->
         <button id="darkModeToggle">Toggle Dark Mode</button>
     </header>
-    
+
     <nav>
         <!-- Hamburger menu -->
         <button id="hamburger">&#8801;</button>
@@ -29,31 +31,29 @@
     <main>
         <!-- Hero Image -->
         <div class="temple-image">
-            <source media="(max-width: 200px)" srcset="images/mobile_temple-view.webp">
-            <source media="(min-width: 401px) and (max-width: 600px)" srcset="images/san_diego_california_temple.webp">
+            <img srcset="images/mobile_temple-view.webp" media="(max-width: 200px)">
+            <img srcset="images/san_diego_california_temple.webp" media="(min-width: 201px) and (max-width: 600px)">
             <img src="images/san_diego_california_temple.webp" alt="Latter-day Temple">
             <div class="overlay">San Diego Temple</div>
         </div>
 
-        <!-- Other content -->
     </main>
 
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3337.732495452974!2d-111.58587642600702!3d33.22110856116167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872a4c6e2f513753%3A0x5a9b8e5779750f31!2sQueen%20Creek%20Olive%20Mill!5e0!3m2!1sen!2sus!4v1706229652803!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
     <footer>
-        <!-- Footer content -->
         <p>&copy; <span id="currentYear"></span> Keillor Behrmann [Arizona, USA]</p>
         <p id="lastModified"></p>
         <section class="card">
             <h2>Information</h2>
-                <!-- Page Visit Counter -->
             <p>Page Visits: <span id="visitCounter">0</span></p>
         </section>
     </footer>
 
-    <!-- Script tags for JavaScript files -->
+    <!-- Script JavaScript files -->
     <script src="styles/getDates.js"></script>
     <script src="styles/DarkMode.js"></script>
     <script src="styles/visitCounter.js"></script>
 </body>
+
 </html>
