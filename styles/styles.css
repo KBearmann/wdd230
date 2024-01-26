@@ -38,6 +38,11 @@ body {
     background-color: lightblue;
     color: #333333; 
 }
+iframe {
+    display: block;
+    margin: 0 auto; /* Center the map horizontally */
+    margin-top: 20px; /* Add margin to separate it from other content */
+}
 
 @media (max-width: 600px) {
     body {
