@@ -1,4 +1,4 @@
-/* Styles for the temple image */
+/*temple image */
 .temple-image {
     position: relative;
     overflow: hidden;
@@ -19,7 +19,7 @@
     text-align: center;
 }
 
-/* Other styles */
+/* Other */
 header {
     text-align: center;
 }
@@ -40,7 +40,7 @@ body {
     }
 }
 
-/* Dark Mode styles */
+/* Dark Mode */
 body.dark-mode {
     background-color: #1a1a1a; 
     color: #ffffff; 
