@@ -1,52 +1,49 @@
+<style>
+    .temple-image {
+        position: relative;
+        overflow: hidden;
+    }
 
+    .temple-image img {
+        width: 100%;
+        height: auto;
+    }
 
-.temple-image {
-    position: relative;
-    overflow: hidden;
-}
+    .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 24px;
+        text-align: center;
+    }
+</style>
 
-.temple-image img {
-    width: 100%;
-    height: auto;
-}
+<style>
+    header {
+        text-align: center;
+    }
 
-.overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 24px;
-    text-align: center;
-}
+    header img {
+        width: 200px;
+        height: auto;
+    }
 
-
-header {
-    text-align: center;
-}
-
-header img {
-    width: 200px;
-    height: auto;
-}
-
-body {
-    background-color: lightgray;
-    color: #333333; 
-}
-@media (max-width: 600px) {
     body {
         background-color: lightgray;
+        color: #333333; 
     }
-}
 
-/* Dark Mode */
-body.dark-mode {
-    background-color: #1a1a1a; 
-    color: #ffffff; 
-}
-@media (max-width: 600px) {
-    body {
-        background-color: lightgray;
+    @media (max-width: 600px) {
+        body {
+            background-color: lightgray;
+        }
     }
-}
+
+    /* Dark Mode */
+    body.dark-mode {
+        background-color: #1a1a1a; 
+        color: #ffffff; 
+    }
+</style>
