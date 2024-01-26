@@ -6,9 +6,9 @@
 }
 
 .temple-image img {
-    width: 100%;
+    width: 50%;
     height: auto;
-    margin: 20px auto; /* Center the image vertically and add margin */
+    margin: 40px auto; /* Center the image vertically and add margin */
     display: block; /* Remove extra space below inline images */
 }
 
