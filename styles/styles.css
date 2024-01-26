@@ -1,15 +1,15 @@
-/*temple image */
+/* temple image */
 .temple-image {
     position: relative;
     overflow: hidden;
+    text-align: center; /* Center the image horizontally */
 }
 
 .temple-image img {
     width: 100%;
     height: auto;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
+    margin: 20px auto; /* Center the image vertically and add margin */
+    display: block; /* Remove extra space below inline images */
 }
 
 .overlay {
@@ -26,13 +26,14 @@
 header {
     text-align: center;
 }
+
 .keillorimage {
     width: 70%;
     height: auto;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
+    margin: 20px auto; /* Center the image vertically and add margin */
+    display: block; /* Remove extra space below inline images */
 }
+
 body {
     background-color: lightblue;
     color: #333333; 
