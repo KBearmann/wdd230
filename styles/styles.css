@@ -5,8 +5,11 @@
 }
 
 .temple-image img {
-    width: 100%;
+    width: 70%;
     height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
 }
 
 .overlay {
@@ -23,7 +26,12 @@
 header {
     text-align: center;
 }
-
+.keillorimage {
+    width: 70%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
 header img {
     width: 200px;
     height: auto;
