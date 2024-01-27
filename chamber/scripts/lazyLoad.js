@@ -1,4 +1,3 @@
-// Lazy load
 document.addEventListener("DOMContentLoaded", function () {
     const lazyImages = document.querySelectorAll('.lazy-image');
 
@@ -11,8 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     img.setAttribute('src', src);
                     img.classList.add('fade-in');
-
-                    observer.disconnect();
                 }
             });
         });
