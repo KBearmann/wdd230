@@ -45,10 +45,15 @@ iframe {
 }
 
 @media (max-width: 600px) {
-    body {
-        background-color: lightgray;
+    #mobileMenu {
+        display: none;
+    }
+
+    #mobileMenu.show {
+        display: block;
     }
 }
+
 
 /* Dark Mode */
 body.dark-mode {
