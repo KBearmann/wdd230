@@ -82,6 +82,33 @@ nav li {
 footer {
 
 }
+/* discover.html */
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+}
+
+.discover-main {
+    overflow: hidden; 
+}
+
+.discover-sidebar {
+    background-color: #f0f0f0; 
+    padding: 20px;
+}
+
+.discover-content {
+    padding: 20px;
+}
+
+.lazy-image {
+    width: 100%; 
+    margin-bottom: 25px; 
+    transition: opacity 0.5s ease; 
+}
+
+/* Additional styles*/
 
 @media only screen and (max-width: 768px) {
     .main {
