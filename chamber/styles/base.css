@@ -33,11 +33,11 @@ nav {
     /* Mobile View */
     @media only screen and (max-width: 768px) {
         nav {
-        flex-direction: column;
-        align-items: flex-start;
+            flex-direction: column;
+            align-items: flex-start;
         }
         nav ul {
-        display: none;
+            display: none;
         }
         .hamburger {
             display: flex;
@@ -160,10 +160,3 @@ body {
     opacity: 0.8;
 }
 
-/* Additional styles*/
-
-@media only screen and (max-width: 768px) {
-    .main {
-        padding: 10px;
-    }
-}
