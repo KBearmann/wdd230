@@ -147,8 +147,8 @@ body {
 
 .lazy-image-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
+    gap: 5px;
 }
 
 .lazy-image {
