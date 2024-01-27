@@ -30,19 +30,19 @@ nav {
     cursor: pointer;
 }
 
-/* Mobile View */
-@media only screen and (max-width: 768px) {
-    nav {
+    /* Mobile View */
+    @media only screen and (max-width: 768px) {
+        nav {
         flex-direction: column;
         align-items: flex-start;
-    }
-    nav ul {
+        }
+        nav ul {
         display: none;
+        }
+        .hamburger {
+            display: flex;
+        }
     }
-    .hamburger {
-        display: flex;
-    }
-}
 
 nav ul {
     list-style-type: none;
@@ -81,9 +81,9 @@ nav li {
 
 footer {
     bottom:  0;
-    background-color: #lightblue;
-    color: #fff;
-    padding: 20 px;
+    background-color: lightblue;
+    color: #333;
+    padding: 20px;
     text-align: center;
     position: fixed;
     width: 100%;
