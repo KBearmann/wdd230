@@ -49,9 +49,14 @@ iframe {
         display: none;
     }
 
-    #mobileMenu.show {
+    #mobileMenu.show-menu {
         display: block;
+    
     }
+    #closeMenu {
+    display: none;
+    }
+
 }
 
 
