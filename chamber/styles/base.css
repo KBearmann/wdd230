@@ -85,6 +85,8 @@ footer {
     color: #fff;
     padding: 20 px;
     text-align: center;
+    position: fixed;
+    width: 100%;
 
 }
 /* discover.html */
