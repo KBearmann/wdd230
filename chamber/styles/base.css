@@ -84,16 +84,17 @@ footer {
     background-color: lightblue;
     color: #333;
     padding: 10px;
-    text-align: center;
-    position: fixed; 
+    text-align: center; 
     width: 100%;
+    position: absolute;
 
 }
 /* discover.html */
 html, body {
-    height: 80%;
+    height: 100%;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 body {
     height: 80%;
