@@ -83,7 +83,11 @@ footer {
 
 }
 /* discover.html */
-
+html, body {
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
 body {
     display: grid;
     grid-template-columns: 1fr 3fr; 
@@ -134,7 +138,7 @@ body {
 }
 
 .lazy-image {
-    width: 200%;
+    width: 100%;
     height: auto;
     transition: opacity 0.5s ease;
 }
