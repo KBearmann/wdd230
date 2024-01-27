@@ -121,10 +121,35 @@ body {
     font-size: 16px;
     line-height: 1.5;
 }
+.discover-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Adjust the column widths as needed */
+}
+
+.discover-sidebar {
+    background-color: black; /* Change the background color as needed */
+    color: white; /* Change the text color as needed */
+    padding: 20px;
+}
+
+.discover-content {
+    padding: 20px;
+}
+
+.lazy-image-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
 .lazy-image {
-    width: 100%; 
-    margin-bottom: 25px; 
-    transition: opacity 0.5s ease; 
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease;
+}
+
+.lazy-image:hover {
+    opacity: 0.8;
 }
 
 /* Additional styles*/
