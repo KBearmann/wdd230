@@ -4,46 +4,63 @@
 <head>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/discover.css"> <!-- Add a new CSS file for specific styles -->
+    <link rel="stylesheet" href="styles/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Keillor Behrmann] - Discover</title>
-    <!-- Other meta tags and links as needed -->
+    <title>[Keillor Behrmann] - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development. Keillor Behrmann's course assignment portal with other relevant keywords.">
+    <meta name="author" content="Keillor Joseph Behrmann (KJ)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 
 <body>
 
     <header>
-        <!-- Your header content -->
+
     </header>
 
     <nav>
-        <!-- Your navigation content -->
+        <div class="hamburger" onclick="toggleNav()" role="button" aria-label="Toggle Navigation">☰</div>
+        <ul id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
     </nav>
 
-    <main class="discover-main">
-        <section class="discover-sidebar">
-            <!-- Sidebar content goes here -->
-            <div class="visit-info">
-                <!-- Display information based on user's last visit -->
-            </div>
-        </section>
+    <div class="discover-container">
+        <!-- Sidebar -->
+        <div class="discover-sidebar">
+            <!-- Add your sidebar content here -->
+            <!-- For example: -->
+            <p>Sidebar Content</p>
+        </div>
 
-        <section class="discover-content">
-            <!-- Main content with lazy-loaded images goes here -->
-            <img class="lazy-image" data-src="images/image1.jpg" alt="Image 1">
-            <img class="lazy-image" data-src="images/image2.jpg" alt="Image 2">
-            <!-- Add more images as needed -->
-        </section>
-    </main>
+        <!-- Main Content -->
+        <div class="discover-content">
+            <!-- Add your main content here -->
+            <!-- For example: -->
+            <section class="lazy-image-section">
+                <!-- Lazy-loaded images with hover effect -->
+                <img src="path/to/image1.jpg" alt="Caption 1" class="lazy-image" loading="lazy">
+                <!-- Repeat for the other images -->
+            </section>
+        </div>
+    </div>
 
     <footer>
-        <!-- Your footer content -->
+        <p>&copy; <span id="currentYear"></span> Keillor Behrmann [Arizona, USA]</p>
+        <p id="lastModified"></p>
+        <p>Chamber Contact Information:</p>
+        <address>
+            Chamber Address<br>
+            City, State, ZIP<br>
+            Phone: xxx-xxx-xxxx<br>
+            Email: info@chamber.com
+        </address>
     </footer>
 
     <script src="getDates.js"></script>
-    <script src="scripts/lazyLoad.js"></script> <!-- Include a script for lazy loading images -->
-
+    <script src="scripts.js"></script>
 </body>
 
 </html>
