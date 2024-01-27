@@ -84,7 +84,7 @@ footer {
 }
 /* discover.html */
 html, body {
-    height:100%;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -92,7 +92,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 3fr; 
     background-color: lightblue;
-    transition: background-color 0.5 ease;
+    transition: background-color 0.5s ease;
 }
 
 .discover-main {
