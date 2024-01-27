@@ -74,7 +74,7 @@ nav li {
 }
 
 .main {
-    padding: 20px;
+    padding: 40px;
 }
 
 footer {
@@ -84,14 +84,14 @@ footer {
     padding: 10px;
     text-align: center; 
     width: 100%;
-    position: absolute;
+    position: fixed;
 
 }
 /* discover.html */
 html, body {
     height: 80%;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     position: relative;
 }
 body {
@@ -100,6 +100,7 @@ body {
     grid-template-columns: 1fr 3fr; 
     background-color: lightblue;
     transition: background-color 0.5s ease;
+    padding: 20px;
 }
 
 .discover-main {
