@@ -95,15 +95,6 @@ body {
     overflow: hidden; 
 }
 
-.discover-sidebar {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-}
-
-.discover-content {
-    padding: 20px;
-}
 .sidebar-info {
     background-color: #333; 
     color: #fff; 
@@ -123,7 +114,7 @@ body {
 }
 .discover-container {
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Adjust the column widths as needed */
+    grid-template-columns: 1fr 3fr; /* Adjust the column widths as needed */
 }
 
 .discover-sidebar {
@@ -138,7 +129,7 @@ body {
 
 .lazy-image-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
