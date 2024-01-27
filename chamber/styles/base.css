@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    
+    text-align: center;
 }
 
 nav {
@@ -85,7 +85,7 @@ footer {
     color: #333;
     padding: 10px;
     text-align: center;
-    position: fixed; 
+    position: relative; 
     width: 100%;
 
 }
