@@ -1,11 +1,36 @@
 // getDates.js
 
-// Get the current year
-const currentYear = new Date().getFullYear();
+document.addEventListener("DOMContentLoaded", function () {
+    // Check if localStorage is supported
+    if (typeof Storage !== "undefined") {
+        // Get the last visit date from localStorage
+        var lastVisit = localStorage.getItem("lastVisit");
 
-// Get the last modified date of the document
-const lastModifiedDate = document.lastModified;
+        if (lastVisit) {
+            // Calculate the time difference
+            var currentDate = new Date();
+            var daysDifference = Math.floor((currentDate - new Date(lastVisit)) / (1000 * 60 * 60 * 24));
 
+            // Display message based on the time difference
+            if (daysDifference === 0) {
+                document.getElementById('sidebar-message').textContent = "Back so soon! Awesome!";
+            } else if (daysDifference === 1) {
+                document.getElementById('sidebar-message').textContent = "You last visited 1 day ago.";
+            } else {
+                document.getElementById('sidebar-message').textContent = `You last visited ${daysDifference} days ago.`;
+            }
+        } else {
+            // First visit
+            document.getElementById('sidebar-message').textContent = "Welcome! Let us know if you have any questions.";
+        }
 
-document.querySelector('footer #currentYear').textContent = currentYear;
-document.getElementById('lastModified').textContent = `Last Modified: ${lastModifiedDate}`;
+        // Update
+        localStorage.setItem("lastVisit", new Date());
+    } else {
+        console.error("LocalStorage is not supported on this browser.");
+    }
+
+    // Get the current year
+    const currentYear = new Date().getFullYear();
+
+   
