@@ -85,17 +85,18 @@ footer {
     color: #333;
     padding: 10px;
     text-align: center;
-    position: absolute; 
+    position: fixed; 
     width: 100%;
 
 }
 /* discover.html */
 html, body {
-    height: 100%;
+    height: 80%;
     margin: 0;
     padding: 0;
 }
 body {
+    height: 80%;
     display: grid;
     grid-template-columns: 1fr 3fr; 
     background-color: lightblue;
@@ -120,7 +121,7 @@ body {
 }
 
 .sidebar-info p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
 }
 .discover-container {
