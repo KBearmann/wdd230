@@ -114,12 +114,12 @@ body {
 }
 
 .sidebar-info h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .sidebar-info p {
-    font-size: 20px;
+    font-size: 15px;
     line-height: 1.5;
 }
 .discover-container {
