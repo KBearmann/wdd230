@@ -84,7 +84,7 @@ footer {
     padding: 10px;
     text-align: center; 
     width: 100%;
-    position: bottom;
+    position: fixed;
 
 }
 /* discover.html */
