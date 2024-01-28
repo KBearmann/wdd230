@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const lazyImages = document.querySelectorAll('.lazy-image');
 
-    const lazyLoad = target => {
+    const lazyLoad = () => {
         const io = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -21,6 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
             io.observe(img);
         });
     };
-    
+
     lazyLoad();
 });
