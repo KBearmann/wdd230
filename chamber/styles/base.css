@@ -80,6 +80,7 @@ nav li {
 footer {
     bottom:  0;
     background-color: lightblue;
+    height: 30px
     color: #333;
     padding: 10px;
     text-align: center; 
