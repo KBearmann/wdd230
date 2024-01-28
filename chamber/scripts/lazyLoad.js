@@ -10,12 +10,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     img.setAttribute('src', src);
                     img.classList.add('fade-in');
+
+                    // Unobserve the image once it's loaded
+                    observer.unobserve(img);
                 }
             });
         });
 
-        io.observe(target);
+        lazyImages.forEach(img => {
+            io.observe(img);
+        });
     };
-
-    lazyImages.forEach(lazyLoad);
+    
+    lazyLoad();
 });
