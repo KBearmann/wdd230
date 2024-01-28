@@ -88,7 +88,7 @@ footer {
 }
 /* discover.html */
 html, body {
-    height: 80%;
+    height: 100%;
     margin: 0;
     padding: 20px;
     position: relative;
@@ -96,11 +96,25 @@ html, body {
 body {
     height: 80%;
     display: grid;
-    grid-template-columns: 1fr 3fr; 
+    grid-template-columns: 1fr; 
     background-color: lightblue;
     transition: background-color 0.5s ease;
     padding: 20px;
 }
+@media only screen and (min-width: 768px) {
+    body {
+        grid-template-columns: 1fr 3fr; /* Two columns for larger screens */
+    }
+
+    .discover-container {
+        grid-template-columns: 1fr 3fr; 
+    }
+
+    .discover-content {
+        padding: 20px;
+    }
+}
+
 
 .discover-main {
      
