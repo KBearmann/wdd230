@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Keillor Behrmann">
+    <meta name="description" content="Keillor Behrmann WDD 230 Course Assignment">
+
+    <link rel="shortcut icon" href="chamber/flavicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link href="styles/form.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img id="profile-image" src="images/keillor.webp" alt="Keillor Behrmann Profile Picture">
+        <h1 id="profile-name">Keillor Behrmann</h1>
+    </header>
+
+    <nav>
+        <div id="burger-icon">&#9776;</div>
+        <div>
+            <ul id="menu-items">
+                <li class="menu-item">
+                    <a href="https://kbearmann.github.io/wdd230/index.html">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="">Site Plan</a>
+                </li>
+                <li class="menu-item">
+                    <a href="./form.html">Form</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <main>
+        <form action="record.html" method="get">
+            <!-- Username -->
+            <fieldset>
+                <legend>Account Information</legend>
+                <label class="top" for="username">Username:
+                    <input type="text" id="username" name="username" required>
+                </label>
+            </fieldset>
+
+            <!-- Password -->
+            <fieldset>
+                <label class="top" for="password">Enter Password:
+                    <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}">
+                </label>
+
+                <label class="top" for="confirmPassword">Please Confirm Password:
+                    <input type="password" id="confirmPassword" name="confirmPassword" required onChange="checkPassword()">
+                </label>
+            </fieldset>
+
+            <!-- Email -->
+            <fieldset>
+                <label class="top" for="email">Email:
+                    <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]"
+                        title="Please enter a valid email address">
+                </label>
+            </fieldset>
+
+            <!-- Page Rating -->
+            <fieldset>
+                <label class="top" for="pageRating">Page Rating:
+                    <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" oninput="showRatingValue()">
+                    <span id="ratingValue">5</span>
+                </label>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <input class="submitBtn" type="submit" value="Submit">
+
+        </form>
+    </main>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password");
+            var confirmPassword = document.getElementById("confirmPassword");
+
+            if (password.value !== confirmPassword.value) {
+                    alert("Passwords do not match. Please try again.");
+                    password.value = "";
+                    confirmPassword.value = "";
+                    password.focus();
+            }
+        }
+
+        function showRatingValue() {
+            var ratingValue = document.getElementById("ratingValue");
+            var pageRating = document.getElementById("pageRating");
+            ratingValue.innerText = pageRating.value;
+        }
+    </script>
+
+    </body>
+
+</html>
