@@ -1,17 +1,16 @@
 // getDates.js
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Check if localStorage is supported
     if (typeof Storage !== "undefined") {
-        // Get the last visit date from localStorage
+        // Get the last visit date
         var lastVisit = localStorage.getItem("lastVisit");
 
         if (lastVisit) {
-            // Calculate the time difference
+            //  time difference
             var currentDate = new Date();
             var daysDifference = Math.floor((currentDate - new Date(lastVisit)) / (1000 * 60 * 60 * 24));
 
-            // Display message based on the time difference
+            // Display message 
             if (daysDifference === 0) {
                 document.getElementById('sidebar-message').textContent = "Back so soon! Awesome!";
             } else if (daysDifference === 1) {
