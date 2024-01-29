@@ -1,4 +1,4 @@
-// script.js
+
 
 // Dark Toggle
 const darkModeToggle = document.getElementById('darkModeToggle');
@@ -18,7 +18,7 @@ hamburgerButton.addEventListener('click', () => {
     nav.classList.toggle('show-menu');
 });
 
-// Sidebar
+
 document.addEventListener("DOMContentLoaded", function () {
     var lastVisitDate = localStorage.getItem("lastVisitDate");
     var currentDate = Date.now();
