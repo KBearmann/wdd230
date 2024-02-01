@@ -10,6 +10,13 @@
     box-sizing: border-box;
 
 }
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; 
+    background-color: #222;
+    padding: 10px;
+}
 .temple-image img {
     width: 50%;
     height: auto;
