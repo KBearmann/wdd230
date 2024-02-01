@@ -12,8 +12,10 @@ html {
 
 }
 :root {
-    --main-color: lightblue;
-    --font-size: 16px; 16px;
+    --main-color: blue;
+    --font-size: 16px; 
+    --background-color: light-blue;
+    
 }
 
 form fieldset {
