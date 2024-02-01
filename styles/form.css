@@ -11,6 +11,10 @@ html {
     box-sizing: border-box;
 
 }
+:root {
+    --main-color: lightblue;
+    --front-size: 16px;
+}
 
 form fieldset {
     margin: 2rem 0;
