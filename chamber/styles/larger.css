@@ -1,0 +1,138 @@
+/* Overwrite base.css when width is more that 800px */
+@media screen and (min-width: 800px) {
+
+    #banner {
+      width: 99.7%;
+    }
+  
+    nav {
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 5rem;
+      grid-template-areas: "logo nav weather";
+      align-items: center;
+      justify-items: center;
+      position: sticky;
+      top: 0;
+      min-width: 100%;
+      height: 5rem;
+    }
+  
+    #hamburger {
+      display: none;
+    }
+  
+    #close-button {
+      display: none;
+    }
+  
+    nav ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      justify-self: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    nav li {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+    }
+  
+    nav a {
+      color: var(--nav-link-color);
+      text-decoration: none;
+      padding: 1em;
+      display: block;
+    }
+  
+    #nav-logo {
+      padding-top: 5rem;
+      height: auto;
+      z-index: 1;
+      grid-area: logo;
+      width: 10rem;
+      top: 0;
+      justify-self: start;
+    }
+  
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 2fr 1fr 4fr 1fr 0.2fr;
+      grid-template-areas:
+        "blank"
+        "hero-header"
+        "hero-text"
+        "hero-button"
+        "hero-tabs";
+      margin-top: 5rem;
+      justify-items: center;
+      align-items: center;
+    }
+  
+    .hero-content h1 {
+      grid-area: hero-header;
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--hero-header-color);
+      margin: 0;
+      padding: 0;
+    }
+  
+  
+    .hero-content a {
+      grid-area: hero-button;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: black;
+      padding: 1rem;
+      border: 1px solid var(--nav-background-color);
+      background-color: rgb(106, 255, 0);
+      border-radius: 2rem;
+  
+    }
+  
+
+  
+    footer {
+      background-color: var(--nav-background-color);
+      color: white;
+      text-align: center;
+      margin-top: 3rem;
+      justify-items: center;
+      padding: 1rem;
+    }
+  
+    footer a {
+      color: white;
+    }
+  
+    footer p {
+      color: white;
+    }
+  
+    .joinForm {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.1fr 1fr;
+      grid-template-areas:
+        "header header"
+        "form table";
+    }
+  
+    form label.sbs {
+      padding: 0.4rem 0;
+    }
+  
+    .memberLevels {
+      height: 40%;
+      position: sticky;
+      top: 25%;
+    }
+  
