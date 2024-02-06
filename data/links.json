@@ -1,0 +1,107 @@
+{
+  "Week1": [
+    {
+      "name": "Holy Grail",
+      "link": ""
+    },
+    {
+      "name": "Applied JS",
+      "link": ""
+    },
+    {
+      "name": "Media Query",
+      "link": ""
+    },
+    {
+      "name": "Project Site Plan",
+      "link": "chamber/site-plan.html"
+    }
+  ],
+  "Week2": [
+    {
+      "name": "WDD Responsive Menu",
+      "link": ""
+    },
+    {
+      "name": "Designs",
+      "link": ""
+    },
+    {
+      "name": "Book of Mormon Chapters",
+      "link": ""
+    },
+    {
+      "name": "Week 2 COC Home Page",
+      "link": "chamber/index.html"
+    }
+  ],
+
+  "Week3": [
+    {
+      "name": "WebP",
+      "link": ""
+    },
+    {
+      "name": "Responsive Images",
+      "link": ""
+    },
+    {
+      "name": "LazyLoad",
+      "link": ""
+    },
+    {
+      "name": "Local Storage API BOM",
+      "link": ""
+    },
+    {
+      "name": "Week 3 COC Discover Page",
+      "link": ""
+    }
+  ],
+
+  "Week4": [
+    {
+      "name": "CSS Pseudo-Classes",
+      "link": ""
+    },
+    {
+      "name": "CSS Combinators",
+      "link": ""
+    },
+    {
+      "name": "Table",
+      "link": ""
+    },
+    {
+      "name": "HTML Form",
+      "link": ""
+    },
+    {
+      "name": "Week 4 COC Join Page",
+      "link": ""
+    }
+  ],
+
+  "Week5": [
+    {
+      "name": "CSS Pseudo-elements",
+      "link": ""
+    },
+    {
+      "name": "New Members JSON",
+      "link": ""
+    },
+    {
+      "name": "Prophets",
+      "link": ""
+    },
+    {
+      "name": "Weather",
+      "link": ""
+    },
+    {
+      "name": "Week 5 COC Directory Page",
+      "link": "chamber/directory.html"
+    }
+  ]
+}
