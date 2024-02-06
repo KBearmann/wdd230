@@ -54,7 +54,7 @@ nav li {
 }
 
 .hero {
-    background-image: url('chamber/images/chamber.jpg');
+    background-image: url('images/chamber.jpg');
     background-size: cover;
     background-position: center;
     height: 400px;
