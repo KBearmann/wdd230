@@ -1,24 +1,33 @@
-function displayLinks(weeksData) {
-    const linksContainer = document.getElementById('activity-links');
-    
-    if (!weeksData) {
-        console.error('Weeks data is undefined.');
-        return;
-    }
+// links.js
 
-    // Iterate over each week
-    Object.entries(weeksData).forEach(([weekName, weekLinks]) => {
+// Define baseURL and linksURL
+const baseURL = "https://kbearmann.github.io/wdd230/";
+const linksURL = `${baseURL}data/links.json`;
+
+// Get links data
+async function getLinks() {
+    try {
+        const response = await fetch(linksURL);
+        const data = await response.json();
+        displayLinks(data.weeks);
+    } catch (error) {
+        console.log('Error fetching links data:', error);
+    }
+}
+
+// Display links 
+function displayLinks(weeks) {
+    const linksContainer = document.getElementById('activity-links');
+    weeks.forEach(week => {
         const weekElement = document.createElement('div');
-        weekElement.textContent = weekName;
+        weekElement.textContent = week.week;
 
         const linksList = document.createElement('ul');
-        
-        // Iterate over each link in the week
-        weekLinks.forEach(link => {
+        week.links.forEach(link => {
             const listItem = document.createElement('li');
             const anchor = document.createElement('a');
-            anchor.href = baseURL + link.link;
-            anchor.textContent = link.name;
+            anchor.href = `${baseURL}${link.url}`;
+            anchor.textContent = link.title;
             listItem.appendChild(anchor);
             linksList.appendChild(listItem);
         });
@@ -27,3 +36,6 @@ function displayLinks(weeksData) {
         linksContainer.appendChild(weekElement);
     });
 }
+
+// Call getLinks to fetch and display links data
+getLinks();
