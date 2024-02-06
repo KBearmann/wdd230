@@ -90,6 +90,9 @@ nav li {
 .activity-links ul {
     list-style: none;
     padding: 0;
+    display: grip;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
 .activity-links li {
@@ -97,15 +100,18 @@ nav li {
 }
 
 .activity-links a {
+    display: block;
+    padding: 10px;
+    background-color: lightblue;
     color: #333333;
     text-decoration: none;
-    transition: color 0.3s ease;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
-
 .activity-links a:hover {
-    color: #007bff;
+    background-color: #007bff;
+    color: #fff;
 }
-
 
 .current-event,
 .weather,
