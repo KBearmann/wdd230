@@ -1,5 +1,5 @@
 const apiKey = '357b3d81a38fde17cb2764264313ebfd';
-const city = 'Sant Fe';
+const city = 'Santa Fe';
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 
 async function getWeather() {
