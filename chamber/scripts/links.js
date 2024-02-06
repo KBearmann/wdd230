@@ -1,28 +1,24 @@
-const baseURL = "https://kbearmann.github.io/wdd230/";
-const linksURL = "https://kbearmann.github.io/wdd230/data/links.json";
-
-async function getLinks() {
-    try {
-        const response = await fetch(linksURL);
-        const data = await response.json();
-        displayLinks(data.weeks);
-    } catch (error) {
-        console.log('Error fetching links data:', error);
-    }
-}
-
-function displayLinks(weeks) {
+function displayLinks(weeksData) {
     const linksContainer = document.getElementById('activity-links');
-    weeks.forEach(week => {
+    
+    if (!weeksData) {
+        console.error('Weeks data is undefined.');
+        return;
+    }
+
+    // Iterate over each week
+    Object.entries(weeksData).forEach(([weekName, weekLinks]) => {
         const weekElement = document.createElement('div');
-        weekElement.textContent = week.week;
+        weekElement.textContent = weekName;
 
         const linksList = document.createElement('ul');
-        week.links.forEach(link => {
+        
+        // Iterate over each link in the week
+        weekLinks.forEach(link => {
             const listItem = document.createElement('li');
             const anchor = document.createElement('a');
-            anchor.href = baseURL + link.url;
-            anchor.textContent = link.title;
+            anchor.href = baseURL + link.link;
+            anchor.textContent = link.name;
             listItem.appendChild(anchor);
             linksList.appendChild(listItem);
         });
@@ -31,5 +27,3 @@ function displayLinks(weeks) {
         linksContainer.appendChild(weekElement);
     });
 }
-
-getLinks();
