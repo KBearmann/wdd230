@@ -11,7 +11,7 @@ async function getWeather() {
         const description = data.weather[0].description;
         const icon = data.weather[0].icon;
 
-        document.getElementById('temperature').textContent = `Temperature: ${temperature}°C`;
+        document.getElementById('temperature').textContent = `Temperature: ${temperature}°F`;
         document.getElementById('description').textContent = `Description: ${description}`;
         document.getElementById('weather-icon').src = `https://openweathermap.org/img/wn/${icon}.png`;
     } catch (error) {
