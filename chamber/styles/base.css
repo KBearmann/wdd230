@@ -90,10 +90,11 @@ nav li {
 .activity-links ul {
     list-style: none;
     padding: 0;
-    display: grip;
+    display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
+
 
 .activity-links li {
     margin-bottom: 10px;
