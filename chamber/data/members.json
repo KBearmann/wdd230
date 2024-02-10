@@ -6,7 +6,7 @@
       "website": "https://www.meiklefineart.com/",
       "phone": "505-992-0400",
       "membership": "Platinum",
-      "image": "images/member-1.jpg"
+      "logo": "images/member-1.jpg"
     },
     {
       "name": "The Santa Fe International Literary Festival",
@@ -14,7 +14,7 @@
       "website": "https://www.sfinternationallitfest.org/",
       "phone": "502-000-0000",
       "membership": "Gold",
-      "image": "https://kbearmann.github.io/wdd230/chamber/images/member-2.webp"
+      "logo": "https://kbearmann.github.io/wdd230/chamber/images/member-2.webp"
     },
     {
       "name": "Loretto Chapel",
