@@ -5,6 +5,20 @@ body {
     margin: 0;
     padding: 0;
 }
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn img {
+    width: 24px;
+    height: 24px;
+}
+.btn.active {
+    background-color: lightblue;
+    border-radius: 50%;
+}
 
 header {
     text-align: center;
