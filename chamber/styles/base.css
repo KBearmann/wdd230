@@ -263,6 +263,24 @@ body {
 .grid a {
   color: rgb(0, 217, 255);
 }
+.company-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.273);
+  max-width: 20rem;
+  width: 100%;
+  border-radius: 10%;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.company-logo img {
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
 .company-info {
   color: white;
 }
