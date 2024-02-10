@@ -1,17 +1,3 @@
-const CompaniesElement = document.querySelector("#companies");
-const memberUrl = "data/members.json";
-const gridBtn = document.querySelector("#gridBtn");
-const listBtn = document.querySelector("#listBtn");
-
-async function getCompanies() {
-    const response = await fetch(memberUrl);
-    const data = await response.json();
-    keys = Object.keys(data);
-    displayCompanies(data.members);
-}
-
-getCompanies();
-
 function displayCompanies(data) {
     const activeBtn = document.querySelector(".active");
     const companiesElement = document.querySelector("#companies"); 
@@ -24,7 +10,7 @@ function displayCompanies(data) {
             companyCard.classList.add("company-card");
             companyCard.innerHTML = `
                 <div class="company-logo">
-                    <img src="images/${name.webp}" alt="${name.name}">
+                    <img src="images/${company.image}" alt="${company.name}">
                 </div>
                 <div class="company-info">
                     <h3>${company.name}</h3>
@@ -53,6 +39,7 @@ function displayCompanies(data) {
         });
     }
 }
+
 
 // Event Listeners
 gridBtn.addEventListener("click", () => {
