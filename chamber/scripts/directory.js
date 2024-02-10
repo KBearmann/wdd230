@@ -11,53 +11,48 @@ async function getCompanies() {
     }
 
 getCompanies();
-
-    function displayCompanies(data) {
-        const activeBtn = document.querySelector(".active");
-        if (activeBtn.id === "gridBtn") {
-            CompaniesElement.classList.remove("list");
-            CompaniesElement.classList.add("grid");
-            // For Each Name in the data generate a card with the name , address , website, number and member level
-            data.forEach((name) => {
-                const company = document.createElement("div");
-                company.classList.add("company-card");
-                company.innerHTML = `
+function displayCompanies(data) {
+    const activeBtn = document.querySelector(".active");
+    const companiesElement = document.querySelector("#companies"); 
+    companiesElement.innerHTML = ""; 
+    if (activeBtn.id === "gridBtn") {
+        companiesElement.classList.remove("list");
+        companiesElement.classList.add("grid");
+        data.forEach((company, index) => { 
+            const companyCard = document.createElement("div");
+            companyCard.classList.add("company-card");
+            companyCard.innerHTML = `
                 <div class="company-logo">
-                    <img src="images/${name.logo}" alt="${name.name}">
+                    <img src="images/member-${index + 1}.webp" alt="${company.name}">
                 </div>
                 <div class="company-info">
-                    <h3>${name.name}</h3>
-                    <p>${name.address}</p>
-                    <a href=https://${name.website}>${name.website}</a>
-                    <p>${name.phone}</p>
-                    <p>${name.membership}</p>
+                    <h3>${company.name}</h3>
+                    <p>${company.address}</p>
+                    <a href="https://${company.website}">${company.website}</a>
+                    <p>${company.phone}</p>
+                    <p>${company.membership}</p>
                 </div>
-                `;
-                CompaniesElement.appendChild(company);
-            });
-
-        } else {
-        CompaniesElement.classList.add("list");
-        CompaniesElement.classList.remove("grid");
-        const list = document.createElement("div"); 
-        list.classList.add("company-list"); 
-        
-        //For Each name Generate a div with the name , address , website, number and member level but no logo and no card
-        data.forEach((name) => {
-            const company = document.createElement("section");
-            company.classList.add("company-info");
-           company.innerHTML = `
-                <h3>${name.name}</h3>
-                <p>${name.address}</p>
-                <a href=https://${name.website}>${name.website}</a>
-                <p>${name.phone}</p>
-                <p>${name.membership}</p>
             `;
-            CompaniesElement.appendChild(company);
-        }
-        );
+            companiesElement.appendChild(companyCard);
+        });
+    } else {
+        companiesElement.classList.add("list");
+        companiesElement.classList.remove("grid");
+        data.forEach((company) => { 
+            const companyInfo = document.createElement("div");
+            companyInfo.classList.add("company-info");
+            companyInfo.innerHTML = `
+                <h3>${company.name}</h3>
+                <p>${company.address}</p>
+                <a href="https://${company.website}">${company.website}</a>
+                <p>${company.phone}</p>
+                <p>${company.membership}</p>
+            `;
+            companiesElement.appendChild(companyInfo);
+        });
     }
-    }
+}
+
 
     // Event Listeners
     gridBtn.addEventListener("click", () => {
