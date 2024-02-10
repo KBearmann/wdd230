@@ -23,6 +23,9 @@ function displayCompanies(data) {
             const companyCard = document.createElement("div");
             companyCard.classList.add("company-card");
             companyCard.innerHTML = `
+                <div class="company-logo">
+                    <img src="images/${name.logo}" alt="${name.name}">
+                </div>
                 <div class="company-info">
                     <h3>${company.name}</h3>
                     <p>${company.address}</p>
