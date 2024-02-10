@@ -6,7 +6,7 @@
       "website": "https://www.meiklefineart.com/",
       "phone": "505-992-0400",
       "membership": "Platinum",
-      "logo": "images/member-1.jpg"
+      "logo": "..images/member-1.jpg"
     },
     {
       "name": "The Santa Fe International Literary Festival",
@@ -22,7 +22,7 @@
       "website": "https://www.lorettochapel.com/",
       "phone": "505-982-0092",
       "membership": "Silver",
-      "image": "member-3.webp"
+      "image": "images/member-3.webp"
     },
     {
       "name": "SANTA FE COUNTY TREASURER",
