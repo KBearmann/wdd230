@@ -1,76 +1,61 @@
 {
   "members": [
     {
-      "name": "Sunset Grill",
-      "address": "456 Oak Avenue",
-      "website": "www.sunsetgrill.com",
-      "phone": "555-1234-5678",
+      "name": "BARBARA MEIKLE FINE ART",
+      "address": "236 Delgado St Santa Fe, NM 87501",
+      "website": "https://www.meiklefineart.com/",
+      "phone": "505-992-0400",
       "membership": "Platinum",
       "image": "member-1.webp"
     },
     {
-      "name": "Pizza Palace",
-      "address": "789 Pine Street",
-      "website": "www.pizzapalace.com",
-      "phone": "555-9876-5432",
+      "name": "The Santa Fe International Literary Festival",
+      "address": "Santa Fe New Mexico",
+      "website": "https://www.sfinternationallitfest.org/",
+      "phone": "502-000-0000",
       "membership": "Gold",
       "image": "member-2.webp"
     },
     {
-      "name": "Sweet Treats Bakery",
-      "address": "321 Maple Lane",
-      "website": "www.sweettreats.com",
-      "phone": "555-5678-4321",
+      "name": "Loretto Chapel",
+      "address": "207 OLD SANTA FE TRAIL SANTA FE, New Mexico 87501",
+      "website": "https://www.lorettochapel.com/",
+      "phone": "505-982-0092",
       "membership": "Silver",
       "image": "member-3.webp"
     },
     {
-      "name": "Fresh Market",
-      "address": "654 Elm Street",
-      "website": "www.freshmarket.com",
-      "phone": "555-4321-8765",
+      "name": "SANTA FE COUNTY TREASURER",
+      "address": "100 Catron St, Santa Fe, NM 8750",
+      "website": "https://www.santafecountynm.gov/treasurer",
+      "phone": "505-986-6245",
       "membership": "Bronze",
       "image": "member-4.webp"
     },
     {
-      "name": "Nature's Bounty",
-      "address": "987 Birch Avenue",
-      "website": "www.naturesbounty.com",
-      "phone": "555-8765-4321",
+      "name": "LAS COSAS KITCHEN SHOPPE AND COOKING SCHOOL",
+      "address": "Las Cosas Kitchen Shoppe 181 Paseo De Peralta Santa Fe, NM 87501",
+      "website": "https://www.lascosascooking.com/collections/list-of-classes",
+      "phone": "505 988 3394",
       "membership": "NPO",
       "image": "member-5.webp"
     },
     {
-      "name": "Adventure Outfitters",
-      "address": "543 Redwood Lane",
-      "website": "www.adventureoutfitters.com",
-      "phone": "555-1234-5678",
+      "name": "Santa Fe New Mexican",
+      "address": "P.O. Box 2048 Santa Fe, NM 87504-2048",
+      "website": "https://www.santafenewmexican.com/",
+      "phone": "505-983-3303",
       "membership": "Silver",
       "image": "member-6.webp"
     },
     {
-      "name": "Green Thumb Nursery",
-      "address": "876 Cedar Street",
-      "website": "www.greenthumbnursery.com",
-      "phone": "555-5678-4321",
+      "name": "Del Norte Credit Union",
+      "address": "3634 Rio Rancho Blvd NE Ste 101, Rio Rancho, NM 87144",
+      "website": "https://www.dncu.com/locations-atms/rio-rancho-branch/",
+      "phone": "877-818-DNCU (3628)",
       "membership": "Gold",
       "image": "member-7.webp"
-    },
-    {
-      "name": "Urban Escape",
-      "address": "234 Pine Lane",
-      "website": "www.urbanescape.com",
-      "phone": "555-4321-8765",
-      "membership": "Bronze",
-      "image": "member-8.webp"
-    },
-    {
-      "name": "Harmony Haven",
-      "address": "876 Maple Street",
-      "website": "www.harmonyhaven.com",
-      "phone": "555-9876-5432",
-      "membership": "Platinum",
-      "image": "member-9.webp"
     }
+
   ]
 }
