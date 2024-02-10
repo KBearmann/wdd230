@@ -39,20 +39,19 @@ function displayCompanies(data) {
         });
     }
 }
-
-
-
-// Event Listeners
+const listBtn = document.getElementById("listBtn");
+const gridBtn = document.getElementById("gridBtn");
 gridBtn.addEventListener("click", () => {
-    CompaniesElement.innerHTML = "";
+    companiesElement.innerHTML = "";
     listBtn.classList.remove("active");
     gridBtn.classList.add("active");
     getCompanies(); 
 });
 
 listBtn.addEventListener("click", () => {
-    CompaniesElement.innerHTML = "";
+    companiesElement.innerHTML = "";
     gridBtn.classList.remove("active");
     listBtn.classList.add("active");
     getCompanies(); 
 });
+
