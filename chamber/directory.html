@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santa Fe Chamber of Commerce - Discover the Essence of Santa Fe, New Mexico</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development. Keillor Behrmann">
+    <meta name="author" content="Keillor Joseph Behrmann (KJ)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Chamber of Commerce and Discover">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kbearmann.github.io/wdd230/chamber/images/chamber.jpg">
+    <meta property="og:url" content="https://kbearmann.github.io/wdd230/chamber/discover">
+
+    <!-- Script for dynamic activity links -->
+    <script src="https://kbearmann.github.io/wdd230/chamber/scripts/links.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1> Santa Fe Chamer of Commerce</h1>
+    </header>
+
+    <nav>
+        <div class="hamburger" onclick="toggleNav()" role="button" aria-label="Toggle Navigation">☰</div>
+        <ul id="nav-links">
+            <li><a href="https://kbearmann.github.io/wdd230/">Home</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <!-- Sidebar message -->
+        <p id="sidebar-message">Welcome! Let us know if you have any questions!</p>
+    </nav>
+
+    <main>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Keillor Behrmann [Arizona, USA]</p>
+        <p id="lastModified"></p>
+
+        <!--Contact Info -->
+        <p>Chamber Contact Information:</p>
+        <address>
+            1611 Calle Lorca, Suite 301<br>
+            Santa Fe, NM 87505<br>
+            Phone: (505) 988-3279<br>
+            Email: info@santafechamber.com
+        </address>
+    </footer>
+
+    <script src="https://kbearmann.github.io/wdd230/chamber/scripts/getDates.js"></script>
+    <script src="https://kbearmann.github.io/wdd230/chamber/scripts/weather.js" defer></script>
+
+</body>
+
+</html>
