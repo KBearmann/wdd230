@@ -1,3 +1,17 @@
+const CompaniesElement = document.querySelector("#companies");
+const memberUrl = "data/members.json";
+const gridBtn = document.querySelector("#gridBtn");
+const listBtn = document.querySelector("#listBtn");
+
+async function getCompanies() {
+    const response = await fetch(memberUrl);
+    const data = await response.json();
+    keys = Object.keys(data);
+    displayCompanies(data.members);
+}
+
+getCompanies();
+
 function displayCompanies(data) {
     const activeBtn = document.querySelector(".active");
     const companiesElement = document.querySelector("#companies"); 
@@ -36,3 +50,18 @@ function displayCompanies(data) {
         });
     }
 }
+
+// Event Listeners
+gridBtn.addEventListener("click", () => {
+    CompaniesElement.innerHTML = "";
+    listBtn.classList.remove("active");
+    gridBtn.classList.add("active");
+    getCompanies(); 
+});
+
+listBtn.addEventListener("click", () => {
+    CompaniesElement.innerHTML = "";
+    gridBtn.classList.remove("active");
+    listBtn.classList.add("active");
+    getCompanies(); 
+});
