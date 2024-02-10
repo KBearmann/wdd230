@@ -5,12 +5,12 @@ function displayCompanies(data) {
     if (activeBtn.id === "gridBtn") {
         companiesElement.classList.remove("list");
         companiesElement.classList.add("grid");
-        data.forEach((company) => { 
+        data.forEach((company, index) => { 
             const companyCard = document.createElement("div");
             companyCard.classList.add("company-card");
             companyCard.innerHTML = `
                 <div class="company-logo">
-                    <img src="images/${company.image}" alt="${company.name}">
+                    <img src="images/member-${index + 1}.webp" alt="${company.name}">
                 </div>
                 <div class="company-info">
                     <h3>${company.name}</h3>
@@ -39,6 +39,7 @@ function displayCompanies(data) {
         });
     }
 }
+
 
 
 // Event Listeners
