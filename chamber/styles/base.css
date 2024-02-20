@@ -148,7 +148,7 @@ nav li {
 }
 
 .weather-info p {
-    color: #666;
+    color: black;
     font-size: 16px; 
     margin-right: 20px; 
 }
@@ -168,7 +168,7 @@ nav li {
 
 .current-event h2,
 .company-spotlight h2 {
-    color: slategrey; 
+    color: black; 
     font-size: 24px;
 }
 
