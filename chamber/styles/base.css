@@ -129,7 +129,7 @@ nav li {
     color: #fff;
 }
 .weather {
-    background-color: #f9f9f9; 
+    background-color: slategrey; 
     padding: 20px; 
     margin-top: 20px; 
     border-radius: 10px; 
@@ -161,14 +161,14 @@ nav li {
 
 .current-event,
 .company-spotlight {
-    background-color: #fff; 
+    background-color: slategrey; 
     padding: 20px; 
     margin-top: 20px; 
 }
 
 .current-event h2,
 .company-spotlight h2 {
-    color: #333; 
+    color: slategrey; 
     font-size: 24px;
 }
 
