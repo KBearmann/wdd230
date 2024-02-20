@@ -71,7 +71,8 @@ nav li {
     background-image: url('https://kbearmann.github.io/wdd230/chamber/images/chamber.jpg');
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 300px;
+    width: auto;
     color: #fff;
     text-align: center;
     display: flex;
