@@ -31,6 +31,15 @@ function displayCompanies(data) {
             companiesElement.appendChild(companyInfo);
         });
     }
+
+    // Populate the company spotlight section
+    const companySpotlightContainer = document.querySelector(".company-spotlight");
+    companySpotlightContainer.innerHTML = "";
+    const spotlightCompanies = data.filter(company => company.membership === "Platinum");
+    spotlightCompanies.slice(0, 3).forEach((company, index) => {
+        const companyCard = createCompanyCard(company, index);
+        companySpotlightContainer.appendChild(companyCard);
+    });
 }
 
 function createCompanyCard(company, index) {
@@ -88,5 +97,5 @@ listBtn.addEventListener("click", () => {
     getCompanies();
 });
 
-// Initial call to fetch and display companies
+// Initial call 
 getCompanies();
