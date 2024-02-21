@@ -5,7 +5,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 .btn {
     background-color: transparent;
     border: none;
@@ -16,7 +15,6 @@ body {
     width: 24px;
     height: 24px;
 }
-
 .btn.active {
     background-color: lightblue;
     border-radius: 50%;
@@ -35,6 +33,7 @@ nav {
     align-items: center;
 }
 
+/* Hamburger */
 .hamburger {
     display: none;
     justify-content: space-between;
@@ -43,18 +42,19 @@ nav {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
+    /* Mobile View */
+    @media only screen and (max-width: 768px) {
+        nav {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        nav ul {
+            display: none;
+        }
+        .hamburger {
+            display: flex;
+        }
     }
-    nav ul {
-        display: none;
-    }
-    .hamburger {
-        display: flex;
-    }
-}
 
 nav ul {
     list-style-type: none;
@@ -79,58 +79,343 @@ nav li {
     flex-direction: column;
     justify-content: center;
 }
-
 .hero .hero-content {
     position: relative;
     z-index: 1;
 }
 
-.weather {
-    background-color: slategrey;
-    padding: 20px;
+.hero .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 90%;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+.activity-links {
     margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.weather h2 {
-    color: #333;
+.activity-links h2 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
+.activity-links ul {
+    list-style: none;
+    padding: 0;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+
+.activity-links li {
+    margin-bottom: 10px;
+}
+
+.activity-links a {
+    display: block;
+    padding: 10px;
+    background-color: lightblue;
+    color: #333333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.activity-links a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+#members {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr repeat(4, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
+  text-align: center;
+  justify-items: center;
+}
+.memberLevels {
+  background-color: rgba(7, 7, 7, 0.247);
+  text-align: center;
+  border: 1px solid #445ba9;
+  padding: 0.5rem;
+  border-radius: 10px;
+  max-width: 25rem;
+  grid-area: table;
+  height: 100%;
+}
+.memberLevels h3 {
+  color: white;
+}
+
+.memberLevels table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.8rem;
+  text-align: left;
+  color: white;
+}
+
+.memberLevels th,
+.memberLevels td {
+  padding: 0.5rem;
+  border: 1px solid var(--accent3-color);
+}
+
+.memberLevels th {
+  background-color: #445ba9;
+  color: white;
+}
+
+.memberLevels tr:nth-child(even) {
+  background-color: #445ba9;
+}
+
+.memberLevels table caption {
+  font-weight: bold;
+  padding: 0.5rem;
+  caption-side: bottom;
+}
+.weather {
+    background-color: slategrey; 
+    padding: 20px; 
+    margin-top: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.weather h2 {
+    color: #333; 
+    font-size: 24px; 
+    margin-bottom: 10px; 
+}
+
 .weather-info {
-    display: flex;
-    align-items: center;
+    display: flex; 
+    align-items: center; 
 }
 
 .weather-info p {
     color: black;
-    font-size: 16px;
-    margin-right: 20px;
+    font-size: 16px; 
+    margin-right: 20px; 
 }
 
 .weather-icon {
     width: 50px;
-    height: 50px;
-    margin-right: 10px;
+    height: 50px; 
+    margin-right: 10px; 
 }
 
 .current-event,
 .company-spotlight {
-    background-color: slategrey;
-    padding: 20px;
-    margin-top: 20px;
+    background-color: slategrey; 
+    padding: 20px; 
+    margin-top: 20px; 
 }
 
 .current-event h2,
 .company-spotlight h2 {
-    color: black;
+    color: black; 
     font-size: 24px;
 }
 
 .current-event p,
 .company-spotlight p {
-    color: #666;
+    color: #666; 
+    font-size: 16px; 
+}
+
+
+.company-spotlight {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.main {
+    padding: 40px;
+}
+
+.banner-container {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.banner {
+    display: inline-block;
+    background-color: #ffcc00;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* discover.html */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+}
+body {
+    height: 100%;
+    grid-template-columns: 1fr; 
+    background-color: lightblue;
+    transition: background-color 0.5s ease;
+    padding: 20px;
+}
+@media only screen and (min-width: 768px) {
+    body {
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .discover-container {
+        grid-template-columns: 1fr 3fr; 
+    }
+
+    .discover-content {
+        padding: 20px;
+    }
+}
+
+
+.discover-main {
+     
+}
+#sidebar-message {
     font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.sidebar-info {
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.sidebar-info h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar-info p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+.discover-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+    width: 80%;
+    margin: 0 auto;
+}
+
+.discover-sidebar {
+    background-color: black; 
+    color: white; 
+    padding: 20px;
+}
+
+.discover-content {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+    width: 80%;
+    margin: 0 auto;
+}
+
+.lazy-image-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
+    gap: 5px;
+}
+
+.lazy-image {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease;
+}
+
+.lazy-image:hover {
+    opacity: 0.8;
+}
+.directory {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 1fr;
+  grid-template-areas:
+    "header header"
+    "btn btn";
+  grid-gap: 1rem;
+  padding: 1rem;
+  justify-items: center;
+}
+
+.directory h1 {
+  grid-area: header;
+  font-size: 2rem;
+  color: white
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(9, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
+  text-align: center;
+  justify-items: center;
+}
+
+.grid a {
+  color: rgb(0, 217, 255);
+}
+.company-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.273);
+  max-width: 20rem;
+  width: 100%;
+  border-radius: 10%;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.company-logo img {
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
+.company-info {
+  color: white;
+}
+
+.list .company-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 0.5rem;
+  background-color: #fff;
+  color: black;
+
+}
+.footer-container {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: lightblue;
+    height: 30px;
+    color: #333;
+    text-align: center;
 }
