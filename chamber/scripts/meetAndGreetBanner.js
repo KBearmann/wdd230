@@ -1,4 +1,4 @@
-
+document.addEventListener("DOMContentLoaded", function() {
 // Function to check if the current day 
 function isMeetAndGreetDay() {
     var today = new Date();
@@ -18,3 +18,4 @@ function toggleMeetAndGreetBanner() {
 
 // Call the function 
 window.onload = toggleMeetAndGreetBanner;
+});
