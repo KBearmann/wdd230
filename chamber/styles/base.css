@@ -128,6 +128,57 @@ nav li {
     background-color: #007bff;
     color: #fff;
 }
+#members {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr repeat(4, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
+  text-align: center;
+  justify-items: center;
+}
+.memberLevels {
+  background-color: rgba(7, 7, 7, 0.247);
+  text-align: center;
+  border: 1px solid #445ba9;
+  padding: 0.5rem;
+  border-radius: 10px;
+  max-width: 25rem;
+  grid-area: table;
+  height: 100%;
+}
+.memberLevels h3 {
+  color: white;
+}
+
+.memberLevels table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.8rem;
+  text-align: left;
+  color: white;
+}
+
+.memberLevels th,
+.memberLevels td {
+  padding: 0.5rem;
+  border: 1px solid var(--accent3-color);
+}
+
+.memberLevels th {
+  background-color: #445ba9;
+  color: white;
+}
+
+.memberLevels tr:nth-child(even) {
+  background-color: #445ba9;
+}
+
+.memberLevels table caption {
+  font-weight: bold;
+  padding: 0.5rem;
+  caption-side: bottom;
+}
 .weather {
     background-color: slategrey; 
     padding: 20px; 
