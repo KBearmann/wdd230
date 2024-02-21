@@ -209,26 +209,35 @@ nav li {
     height: 50px; 
     margin-right: 10px; 
 }
+/* Your existing CSS styles... */
 
-.current-event,
+#meetAndGreetBanner {
+    background-color: Charcolgrey; 
+    color: black; 
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: none; /* Initially hide the banner */
+}
+
+#meetAndGreetBanner p {
+    margin: 0; 
+}
+
 .company-spotlight {
     background-color: slategrey; 
     padding: 20px; 
     margin-top: 20px; 
 }
-
-.current-event h2,
 .company-spotlight h2 {
     color: black; 
     font-size: 24px;
 }
 
-.current-event p,
 .company-spotlight p {
     color: #666; 
     font-size: 16px; 
 }
-
 
 .company-spotlight {
     padding: 20px;
