@@ -16,7 +16,9 @@ async function getWeather() {
         document.getElementById('temperature').textContent = `Temperature: ${temperature}°F`;
         document.getElementById('description').textContent = `Description: ${description}`;
         document.getElementById('weather-icon').src = `https://openweathermap.org/img/wn/${icon}.png`;
-
+        document.getElementById(`day${dayIndex}-temp`).textContent = `Day ${dayIndex} Temperature: ${temperature}°F`;
+        document.getElementById(`day${dayIndex}-description`).textContent = `Description: ${description}`;
+        document.getElementById(`weather-icon-${dayIndex}`).src = `https://openweathermap.org/img/wn/${icon}.png`;
     } catch (error) {
         console.log('Error fetching weather data:', error);
     }
